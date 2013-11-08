@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html;">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="talPor Solutions" />
+
+    <title>DevLabs USB - Tarea 1</title>
+
+    <link href="//fonts.googleapis.com/css?family=Ubuntu|Open+Sans" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" media="all" href="screen.css" />
+    <!-- <script type="text/javascript"> -->
+    <!--   var _gaq = _gaq || []; -->
+    <!--   _gaq.push(['_setAccount', 'UA-35566668-1']); -->
+    <!--   _gaq.push(['_trackPageview']); -->
+    <!--   _gaq.push(['_addIgnoredRef', 'localhost']); -->
+
+    <!--   (function() { -->
+    <!--   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; -->
+    <!--   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; -->
+    <!--   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); -->
+    <!--   })(); -->
+    <!-- </script> -->
+  </head>
+  <body>
+    <a id="github-ribbon" href="https://github.com/devlabs-usb/tarea1-git"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
+
+    <header>
+      <h1>DevLabs</h1>
+      <h2>Tarea 1</h2>
+    </header>
+
+    <section id="explanation">
+      <div>
+        <p>Esta primera tarea consiste en familiarizarse un poco con
+        herramientas que deben ser comunes para el desarrollo de
+        cualquier proyecto. Para lograr esto, tendrás que seguir los
+        siguientes pasos:</p>
+
+        <ol start="0">
+          <li>Tener una cuenta en <a href="https://github.com" target="blank">github</a>.</li>
+          <li>Realizar un fork en github de este repo: <a target="blank" href="https://github.com/devlabs-usb/tarea1-git">http://github/devlabs-usb/tarea-1</a>.</li>
+          <li>Clonar tu propio fork usando <code>git clone</code>.</li>
+          <li>Bajarte a tu repositorio local el branch <code>test</code> de nuestro repositorio <a target="blank" href="https://github/devlabs-usb/tarea-1">http://github/devlabs-usb/tarea-1</a>.</li>
+          <li>Hacer <code>merge</code> de ese nuevo branch a tu <code>master</code></li>
+          <li>Responder las preguntas que se encuentran en este
+          documento, usando tu propia copia.</li>
+          <li>Hacer <code>push</code> de este documento a tu
+          repositorio cuando termines de rellenar las respuestas.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="questions">
+      <article id="q1">
+        <h3>
+          Mostrar el hash del commit que resuelve el conflicto en su
+          repositorio
+        </h3>
+        <div class="answer">
+          El hash sería algo como: 8a000d3d2ec8b5f8b2286ad279c54b430fc97c67<br />
+          o mejor aún, podrían apuntarlo directamente a github:
+          <a href="https://github.com/devlabs-usb/tarea1-git/commit/8a000d3d2ec8b5f8b2286ad279c54b430fc97c67" target="blank">8a000d3d2ec8b5f8b2286ad279c54b430fc97c67</a>
+        </div>
+      </article>
+      <article id="q2">
+        <h3>
+          Utilizando el diccionario SOWPODS de Scrabble
+          (<a href="http://norvig.com/ngrams/sowpods.txt"
+          target="blank">http://norvig.com/ngrams/sowpods.txt</a>)
+          escriba un programa (en su lenguaje de preferencia?) que
+          determine cuáles letras nunca aparecen repetidas de forma
+          consecutiva (AA, BB, CC, etc). Por ejemplo, la letra “D”
+          aparece repetida pues la palabra “ADD” contiene la
+          subsecuencia “DD”
+        </h3>
+        <div class="answer">
+          Derp!
+        </div>
+      </article>
+      <article id="q3">
+        <h3>
+          En un contexto de la herramienta de control de versiones
+          Git: definir working directory, index, local repo, remote
+          repo y dirty working tree.
+        </h3>
+        <div class="answer">
+          Copy & paste cualquier cosa aquí.
+        </div>
+      </article>
+      <article id="q4">
+        <h3>
+          Completar la siguiente tabla indicando para cada celda si el
+          comando especificado en la columna lee (R) y/o escribe (W)
+          en la ubicación especificada en la primera fila. Por
+          ejemplo, el comando git commit, lee el indice, construye un
+          commit, lo agrega al repositorio actual y finalmente vacía
+          el indice.
+        </h3>
+        <div class="answer">
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th scope="col"><code>git diff</code></th>
+                <th scope="col"><code>git fetch</code></th>
+                <th scope="col"><code>git add</code></th>
+                <th scope="col"><code>git commit</code></th>
+                <th scope="col"><code>git pull</code></th>
+                <th scope="col"><code>git push</code></th>
+                <th scope="col"><code>git checkout</code></th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th scope="row">working dir</th>
+                <td>R</td>
+                <td></td>
+                <td>R</td>
+                <td></td>
+                <td>W</td>
+                <td></td>
+                <td>W</td>
+              </tr>
+              <tr>
+                <th scope="row">index</th>
+                <td>R</td>
+                <td></td>
+                <td>W</td>
+                <td>R/W</td>
+                <td></td>
+                <td></td>
+                <td>W</td>
+              </tr>
+              <tr>
+                <th scope="row">local repo</th>
+                <td></td>
+                <td>W</td>
+                <td></td>
+                <td>W</td>
+                <td>W</td>
+                <td>R</td>
+                <td>R</td>
+              </tr>
+              <tr>
+                <th scope="row">remote repo</th>
+                <td></td>
+                <td>R</td>
+                <td></td>
+                <td></td>
+                <td>R</td>
+                <td>W</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article id="q5">
+        <h3>Rellenar la siguiente encuesta</h3>
+        <div class="answer not-technically-an-answer"><a href="." target="blank">http://link-a-la-encuesta.com</a>.</div>
+      </article>
+
+      <article id="q6">
+          <h3>Bonus Points</h3>
+          <div class="answer not-technically-an-answer">
+            <p>Sabemos que esta página no es lo más bonito del mundo,
+            ni esta muy bien hecha. Puntos extras para las personas
+            que quieran modificarla para hacerla más PRO. Pueden
+            borrarla por completo y empezarla de nuevo, la única
+            condición es mantener las mismas preguntas y llenar las
+            respuestas adecuadamente.</p>
+          </div>
+      </article>
+    </section>
+
+    <footer>
+      <p>Contacto: <a href="mailto:devlabs-usb@talpor.com">devlabs-usb@talpor.com</a></p>
+    </footer>
+
+  </body>
+</html>
